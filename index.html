@@ -53,9 +53,30 @@
       line-height: 1.6;
     }
 
+    /* 리스트 스타일 수정 */
     ul {
-      list-style-type: square;
       padding-left: 20px;
+    }
+
+    /* 1차 리스트 (큰 항목) */
+    .main-list > li {
+      margin-bottom: 15px; /* 항목 간 간격 띄우기 */
+      list-style-type: square;
+      font-weight: bold;   /* 제목 강조 */
+      color: #333;
+    }
+
+    /* 2차 리스트 (세부 항목 - 중첩) */
+    .sub-list {
+      margin-top: 5px;
+      padding-left: 20px;
+      font-weight: normal; /* 본문은 굵기 뺌 */
+      color: #555;
+    }
+
+    .sub-list li {
+      list-style-type: disc; /* 내부 리스트는 원형 불릿 */
+      margin-bottom: 5px;
     }
 
     footer {
@@ -78,46 +99,84 @@
 </head>
 <body>
   <header>
-    <h1>Aiches</h1>
+    <h1>20233488 강효신</h1>
     <p>융합소프트웨어학부 1학년 | C, C++, Python 등 학습 중</p>
   </header>
 
   <main>
     <section>
-      <h2>💡 자기소개</h2>
+      <h2>자기소개</h2>
       <p>
-        안녕하세요. 저는 <strong>Aiches</strong>입니다. 현재 융합소프트웨어학부 1학년에 재학 중이며,
-        프로그래밍과 문제 해결에 큰 흥미를 가지고 있습니다.<br>
+        안녕하세요. 저는 동의대학교 융합소프트웨어학부 재학 중인 23학번 1학년 강효신입니다.<br>
+        프로그래밍과 문제를 해결하는 것, 그리고 알지 못했던 새로운 것을 배우는 활동에 큰 흥미를 가지고 있습니다.<br>
         지금 당장은 1학년이기에 할 수 있는 것이 많지는 않지만 다양하게 배워나가고 있습니다.
       </p>
     </section>
 
     <section>
-      <h2>🧠 배우고 있는 기술</h2>
-      <ul>
-        <li><strong>Python</strong> — 기초 문법, 자료형, 조건문, 반복문, 간단한 프로젝트</li>
-        <li><strong>C++</strong> — 기본 문법, 입출력, 배열, 포인터, 간단한 알고리즘 문제 풀이</li>
+      <h2>학습 이력</h2>
+      <ul class="main-list">
+        <li>
+          1학년 1학기
+          <ul class="sub-list">
+            <li>파이썬 기초</li>
+            <li>데이터 사이언스 입문</li>
+          </ul>
+        </li>
+        <li>
+        1학년 2학기
+          <ul class="sub-list">
+            <li>고급 컴퓨터 프로그래밍</li>
+            <li>웹 활용 및 실습</li>
+            <li>컴퓨터 개론</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
+
     <section>
-      <h2>🎯 앞으로의 목표</h2>
+        <h2>기술 스택</h2>
+        <ul class="main-list">
+        <li>
+          사용 가능한 툴, 언어
+          <ul class="sub-list">
+            <li>파이썬</li>
+            <li>C언어</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+          </ul>
+        </li>
+        <li>
+        관심 있는 기술 분야
+          <ul class="sub-list">
+            <li>인공지능</li>
+            <li>웹개발</li>
+            <li>애플리케이션 개발</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>앞으로의 목표</h2>
       <p>
         앞으로는 웹 개발과 인공지능 분야에도 도전해보고 싶습니다.<br>
-        단순히 코드만 짜는 개발자가 아니라, 내가 무엇을 구현하고 있는지를 이해하고며,<br> 
-        사용자가 필요로 하는 것을 이해하고, 직접 구현할 수 있는 개발자로 성장하는 것이 목표입니다.
+        단순히 코드만 짜는 개발자가 아니라, 내가 무엇을 구현하고 있는지를 이해하며,<br> 
+        사용자가 필요로 하는 것을 파악하고 직접 구현할 수 있는 개발자로 성장하는 것이 목표입니다.
       </p>
     </section>
 
     <section>
       <h2>📫 연락하기</h2>
-      <p>이메일: <a href="mailto:aiches@example.com">hs302301hs@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/aiches" target="_blank">(추가 예정)</a></p>
+      <p>이메일: <a href="mailto:hs302301hs@gmail.com">hs302301hs@gmail.com</a></p>
+      <p>GitHub: <a>추가 예정</a></p>
     </section>
   </main>
 
   <footer>
-    © 2025 Aiches. All rights reserved.
+    © 20233488 강효신
   </footer>
 </body>
 </html>
